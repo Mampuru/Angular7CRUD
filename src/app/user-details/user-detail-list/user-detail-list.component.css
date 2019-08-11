@@ -1,0 +1,10 @@
+table tr:hover {
+    cursor: pointer;
+    background-color: #e6f9ff;
+    transform: translateX(-7px);
+}
+
+.tableView {
+    padding-right: 10px;
+    padding-left: 10px;
+}

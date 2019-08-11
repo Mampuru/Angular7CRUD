@@ -1,0 +1,24 @@
+<div class="tableView">
+    <table class="table table-hover">
+        <tr style="background-color: #0099cc; color:white;">
+            <th>Name</th>
+            <th>Surname</th>
+            <th>ID No.</th>
+            <th>Passport No.</th>
+            <th>Mobile No.</th>
+            <th>Email</th>
+            <td></td>
+        </tr>
+        <tr *ngFor="let ud of service.list">
+            <td (click)="populateFrom(ud)">{{ud.name}}</td>
+            <td (click)="populateFrom(ud)">{{ud.surname}}</td>
+            <td (click)="populateFrom(ud)">{{ud.idNumber}}</td>
+            <td (click)="populateFrom(ud)">{{ud.passportNumber}}</td>
+            <td (click)="populateFrom(ud)">{{ud.mobileNumber}}</td>
+            <td (click)="populateFrom(ud)">{{ud.emailAddress}}</td>
+            <td>
+                <i class="fa fa-trash text-danger" aria-hidden="true" (click)="onDelete(ud.id)"></i>
+            </td>
+        </tr>
+    </table>
+</div>
